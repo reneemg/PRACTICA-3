@@ -1,0 +1,152 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --azul-oscuro: #0f3854;
+  --azul-principal: #0066cc;
+  --azul-claro: #2c80d4;
+  --azul-hover: #004c99;
+  --blanco: #b1c3e4;
+  --gris-texto: #4a5568;
+}
+
+body {
+  background-color: #f4f8fb;
+  color: var(--gris-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ENCABEZADO */
+.header {
+  background-color: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo .icon {
+  font-size: 2.2rem;
+}
+
+/* NOMBRE DE LA FARMACIA EN GRANDE */
+.logo h1 {
+  color: var(--azul-oscuro);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.user-actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* SECCIÓN PRINCIPAL (HERO) */
+.hero-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--azul-claro) 0%, #ffffff 100%);
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--gris-texto);
+  margin-bottom: 2.5rem;
+}
+
+.main-actions {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* ESTILOS DE BOTONES */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* Botones Grandes Principales (Inventario y Sucursal) */
+.btn-primary {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--azul-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 102, 204, 0.3);
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  min-width: 200px;
+}
+
+/* Botón Iniciar Sesión */
+.btn-secondary {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: #092538;
+}
+
+/* Botón Carrito */
+.btn-outline {
+  background-color: transparent;
+  color: var(--azul-principal);
+  border: 2px solid var(--azul-oscuro);
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+}
+
+.btn-outline:hover {
+  background-color: var(--azul-claro);
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
